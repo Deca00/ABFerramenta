@@ -19,15 +19,17 @@
     </div>
 
     <section id="sec-1" class="relative grid min-h-screen w-full grid-cols-1">
-      <div class="p-6">
+      <div
+        class="p-6 lg:absolute lg:left-[50%] lg:top-[4%] lg:w-[30%] lg:translate-x-[-50%] lg:p-0"
+      >
         <img class="mt-[7vh]" src="img/logo1.png" alt="logo1" />
         <img class="mt-5" src="img/logo2.png" alt="logo2" />
       </div>
 
       <div
-        class="customFont absolute left-[50%] top-[46%] flex h-fit w-[85%] translate-x-[-50%] justify-center rounded-md border-2 border-gray-500 bg-[#6D1417] py-5 text-center text-[6vw] leading-relaxed text-white"
+        class="customFont absolute left-[50%] top-[46%] flex h-fit w-[85%] translate-x-[-50%] justify-center rounded-md border-2 border-gray-500 bg-[#6D1417] py-5 text-center text-[6vw] leading-relaxed text-white lg:left-[50%] lg:mt-[5%] lg:w-[70%] lg:translate-x-[-50%] lg:rounded-lg lg:text-[4vh]"
       >
-        <ul class="list-none">
+        <ul class="list-none lg:hidden">
           <li>Duplicazione Chiavi</li>
           <li>Serrature</li>
           <li>Materiale Elettrico</li>
@@ -35,29 +37,51 @@
           <li>Colorificio</li>
           <li>Giardinaggio</li>
         </ul>
+
+        <div
+          class="hidden lg:relative lg:flex lg:list-disc lg:flex-wrap lg:justify-center lg:gap-10 lg:text-center"
+        >
+          <div class="rounded-xl bg-slate-200 px-4 text-zinc-800">
+            Duplicazione Chiavi
+          </div>
+          <div class="rounded-xl bg-slate-200 px-4 text-zinc-800">
+            Serrature
+          </div>
+          <div class="rounded-xl bg-slate-200 px-4 text-zinc-800">
+            Materiale Elettrico
+          </div>
+          <div class="rounded-xl bg-slate-200 px-4 text-zinc-800">
+            Idraulica
+          </div>
+          <div class="rounded-xl bg-slate-200 px-4 text-zinc-800">
+            Colorificio
+          </div>
+          <div class="rounded-xl bg-slate-200 px-4 text-zinc-800">
+            Giardinaggio
+          </div>
+        </div>
       </div>
 
-      <a
-        href="#sec-2"
-        class="absolute bottom-[8%] left-[50%] mt-8 h-fit w-fit translate-x-[-50%] rounded-full bg-[#6D1417]"
+      <div
+        class="absolute top-[88%] flex h-[8%] w-full flex-row justify-center gap-10"
       >
-        <button class="round h-[6vh] w-[35vw]">
+        <a href="#sec-2" class="h-full w-[35vw] rounded-full bg-[#6D1417] lg:w-[15vw]">
           <img class="h-full w-full" src="icons/angle-down-svgrepo-com.svg" />
-        </button>
-      </a>
+        </a>
+      </div>
     </section>
 
     <section id="sec-2" class="relative min-h-screen w-full">
-      <div class="absolute right-[10vw] mt-[12vh] w-[30%]">
+      <div class="absolute right-[10vw] mt-[12vh] w-[30%] lg:w-[10%]">
         <img class="h-full w-full" src="img/logo1.png" alt="logo1" />
       </div>
 
       <div
-        class="absolute left-[50%] top-[21%] h-fit w-[80%] translate-x-[-50%]"
+        class="absolute left-[50%] top-[21%] h-fit w-[80%] translate-x-[-50%] lg:w-[30%] lg:top-[10%] lg:left-[50%]"
       >
         <div class="mt-5 rounded-md border-2 border-gray-500 bg-[#6D1417]">
           <table
-            class="customFont w-full table-auto text-center text-[6vw] text-zinc-300"
+            class="customFont w-full table-auto text-center text-[6vw] text-zinc-300 lg:text-[1.7vw]"
           >
             <tbody class="">
               <tr class="font-bold">
@@ -117,24 +141,17 @@
         </div>
       </div>
 
-      <a
-        href="#sec-1"
-        class="absolute bottom-[8%] left-[15%] mt-8 h-fit w-fit translate-x-[-15%] rounded-full bg-[#6D1417]"
+      <div
+        class="absolute top-[88%] flex h-[8%] w-full flex-row justify-center gap-10 "
       >
-        <button class="round h-[6vh] w-[35vw]">
-          <img class="h-full w-full" src="icons/angle-up-svgrepo-com.svg" />
-        </button>
-      </a>
-
-      <a
-        href="#sec-3"
-        class="absolute bottom-[8%] left-[85%] mt-8 h-fit w-fit translate-x-[-85%] rounded-full bg-[#6D1417]"
-      >
-        <button class="round h-[6vh] w-[35vw]">
+        <a href="#sec-3" class="h-full w-[35vw] rounded-full bg-[#6D1417] lg:w-[10vw]">
           <img class="h-full w-full" src="icons/angle-down-svgrepo-com.svg" />
-        </button>
-      </a>
-      
+        </a>
+
+        <a href="#sec-1" class="h-full w-[35vw] rounded-full bg-[#6D1417] lg:w-[10vw]">
+          <img class="h-full w-full" src="icons/angle-up-svgrepo-com.svg" />
+        </a>
+      </div>
     </section>
 
     <section id="sec-3" class="relative min-h-screen w-full">
@@ -202,15 +219,14 @@
         </div>
       </div>
 
-      <a
-        href="#sec-2"
-        class="absolute bottom-[8%] left-[50%] mt-8 h-fit w-fit translate-x-[-50%] rounded-full bg-[#6D1417]"
+      <div
+        class="absolute top-[88%] flex h-[8%] w-full flex-row justify-center gap-10"
       >
-        <button class="round h-[6vh] w-[35vw]">
+        <a href="#sec-2" class="h-full w-[35vw] rounded-full bg-[#6D1417]">
           <img class="h-full w-full" src="icons/angle-up-svgrepo-com.svg" />
-        </button>
-      </a>
-    </section>
+        </a>
+      </div>
 
+    </section>
   </body>
 </html>
